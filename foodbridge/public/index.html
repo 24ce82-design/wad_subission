@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FoodBridge - Zero Hunger, Less Waste</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🌾 FoodBridge</h1>
+  <nav id="nav"></nav>
+</header>
+
+<section class="hero">
+  <h2>Share surplus food. Feed people. Cut waste.</h2>
+  <p>Supports <b>SDG 2 – Zero Hunger</b> and <b>SDG 12 – Responsible Consumption</b>.</p>
+  <div class="stats" id="stats"></div>
+</section>
+
+<main>
+  <section id="authBox" class="card hidden">
+    <h3 id="authTitle">Login</h3>
+    <input id="aName" placeholder="Full name / organisation" class="hidden">
+    <input id="aEmail" type="email" placeholder="Email">
+    <input id="aPass" type="password" placeholder="Password (6+ chars)">
+    <select id="aRole" class="hidden">
+      <option value="donor">I'm a Donor (restaurant, shop, household)</option>
+      <option value="receiver">I'm a Receiver (NGO, shelter, individual)</option>
+    </select>
+    <button id="aSubmit">Submit</button>
+    <a href="#" id="aSwitch"></a>
+    <p class="msg" id="aMsg"></p>
+  </section>
+
+  <section id="donorBox" class="card hidden">
+    <h3>Post surplus food</h3>
+    <input id="lTitle" placeholder="Title (e.g. 20 veg biryani packets)">
+    <textarea id="lDesc" placeholder="Description / pickup notes"></textarea>
+    <div class="row">
+      <select id="lCat"><option value="cooked">Cooked</option><option value="bakery">Bakery</option><option value="produce">Produce</option><option value="packaged">Packaged</option></select>
+      <input id="lServ" type="number" min="1" placeholder="Servings">
+    </div>
+    <div class="row"><input id="lCity" placeholder="City"><input id="lAddr" placeholder="Address"></div>
+    <label>Pickup before <input id="lExp" type="datetime-local"></label>
+    <button id="lSubmit">Post</button>
+    <p class="msg" id="lMsg"></p>
+  </section>
+
+  <section id="mineBox" class="card hidden"><h3 id="mineTitle">My activity</h3><div id="mine"></div></section>
+
+  <section>
+    <div class="filters card">
+      <input id="fQ" placeholder="Search food…">
+      <input id="fCity" placeholder="City">
+      <select id="fCat"><option value="">All types</option><option value="cooked">Cooked</option><option value="bakery">Bakery</option><option value="produce">Produce</option><option value="packaged">Packaged</option></select>
+    </div>
+    <div id="list" class="grid"></div>
+  </section>
+</main>
+<footer>FoodBridge </footer>
+<script src="app.js"></script>
+</body>
+</html>

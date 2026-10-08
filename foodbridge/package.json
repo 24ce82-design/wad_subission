@@ -1,0 +1,7 @@
+{
+  "name": "foodbridge",
+  "version": "1.0.0",
+  "description": "SDG 2 & SDG 12 - surplus food sharing platform",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" }
+}

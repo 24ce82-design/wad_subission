@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "SUJAL RANA",
+      "email": "24ce82@svitvasad.ac.in",
+      "role": "donor",
+      "password": "d1d3899239c1febab6e96e44c63fa11a:a7c18690dd65075b916a0645b5883f8362f4ea5397bc035301aa239dfc877597"
+    },
+    {
+      "id": 3,
+      "name": "hiren",
+      "email": "rana.sujal2612@gmail.com",
+      "role": "donor",
+      "password": "2e5f3dc63a926e5ca0368e368c4ac0b6:96458a7341a336478c1142d875f6f4c4bc586d0306cdb1522ad836da84c6d770"
+    }
+  ],
+  "listings": [
+    {
+      "id": 2,
+      "donorId": 1,
+      "donorName": "SUJAL RANA",
+      "title": "50 veg biriani pakates",
+      "description": "pick on the bombay biriani",
+      "category": "packaged",
+      "servings": 50,
+      "city": "vadodara",
+      "address": "fatepura",
+      "expiresAt": "2026-10-10T04:40:00.000Z",
+      "status": "available",
+      "claimedBy": null,
+      "createdAt": "2026-10-04T05:59:13.562Z"
+    },
+    {
+      "id": 4,
+      "donorId": 3,
+      "donorName": "hiren",
+      "title": "pavbhaji",
+      "description": "",
+      "category": "cooked",
+      "servings": 10,
+      "city": "vadodara",
+      "address": "vaikunth 5 vadodara",
+      "expiresAt": "2026-10-14T04:08:00.000Z",
+      "status": "available",
+      "claimedBy": null,
+      "createdAt": "2026-10-08T04:08:51.531Z"
+    }
+  ],
+  "nextId": 5
+}
